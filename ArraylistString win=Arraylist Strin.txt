@@ -1,0 +1,16 @@
+Arraylist<String> win=Arraylist <String> (driver.getwindowHandles());
+win.get(0);
+driver.switchTo().window(win.get(0));
+close();
+quit();
+
+navigate functions
+driver.navigate.forword();
+driver.navigate.back();
+driver.navigate.refresh();
+driver.navigate.To("url");
+
+DateFormat dst=new simpleDateFormat(HH-MM-SS  DD-MM-YYYY);
+Date dt=new Date();
+File Screenshot=((TakeScreeenshot)driver).getScrrenshotAs(OutputType.file)
+FileUtils.copyFile(Screenshot,new File("location"+dst.Format(dt)+".jpg"))
